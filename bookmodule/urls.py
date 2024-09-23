@@ -1,6 +1,16 @@
 from django.urls import path
 from . import views
-
+'''
 urlpatterns = [
-    path('book/', views.index1, name='index1')
+    path('', views.index1, name='index1'),
+    path('', views.index),
+    path('index2/<int:val1>/', views.index2)
+
+    
+]'''
+urlpatterns = [
+    path('', views.index),
+    path('index2/<int:val1>/', views.index2),
+    path('<int:bookId>', views.viewbook)
 ]
+
