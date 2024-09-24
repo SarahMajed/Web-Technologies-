@@ -15,5 +15,7 @@ urlpatterns = [
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', include("bookmodule.urls")), #include urls.py of bookmodule app
-    path('users/', include("usermodule.urls"))  #include urls.py of usermodule app
+    path('users/', include("usermodule.urls")) , #include urls.py of usermodule app
+    path('pages/', include("pages.urls")),
+    path('page/', include("page.urls"))
 ]
