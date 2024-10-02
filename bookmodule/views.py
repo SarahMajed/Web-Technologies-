@@ -9,7 +9,7 @@ def index1(request):
 
 def index(request):
     name = request.GET.get("name") or "world!"
-    #return render(request, "index1.html", {"name": name})  
+    return render(request, "index1.html", {"name": name})  
 
     return HttpResponse("Hello, " + name)
  
@@ -25,3 +25,18 @@ def viewbook(request, bookId):
     if book2['id'] == bookId: targetBook = book2
     context = {'book':targetBook} # book is the variable name accessible by the template
     return render(request, 'show.html', context)
+
+def index5(request):
+ return render(request, 'index5.html')
+
+def list_books(request):
+ return render(request, 'list_books.html')
+
+def viewbook(request, bookId):
+ return render(request, 'one_book.html')
+
+def aboutus(request):
+ return render(request, 'aboutus.html')
+
+def one_book(request):
+ return render(request, 'one_book.html')

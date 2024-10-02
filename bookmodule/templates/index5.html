@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <!-- load static -->
+<html>
+{% load static %}
+<head>
+    <title>My First Index HTML Page</title>
+    <meta name="keywords" content="Books, recent, Learning, library">
+    <meta name="description" content="Books website">
+    <meta name="author" content="author name">
+    <link rel="icon" href="{% static 'image/qu-icon.png' %}"> <!-- static template tag -->
+    <meta charset="UTF-8">
+    
+    <!-- رابط لملف CSS الخارجي -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- static template tag -->
+
+</head>
+<body>
+    <!-- شريط التنقل مع استخدام CSS خارجي -->
+    <div class="topnav">
+        <a class="active" href="{% url 'books.index5' %}">Home</a> <!-- URL template tag -->
+        <a href="{% url 'books.list_books' %}">List Books</a> <!-- URL template tag -->
+        <a href="{% url 'books.aboutus' %}">About</a> <!-- URL template tag -->
+    </div>
+
+    <!-- العنوان مع استخدام CSS داخلي وInline CSS -->
+    <h1 style="color: blue;">This is heading 1 (Library)</h1> <!-- add inline css -->
+    
+    <!-- فقرة مع استخدام Inline CSS -->
+    <p style="color: white; background-color: black;">This is a paragraph text </p> <!-- add inline css -->
+
+    <a href="https://www.w3schools.com/html/default.asp">to learn more about HTML</a>
+    <hr>
+
+    <!-- عناوين وفقرات أخرى مع CSS داخلي -->
+    <h2>This is heading 2</h2>
+    <p>This is some other text.<br>with newline<br>and another line</p>
+    <hr>
+
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+</body>
+</html>
