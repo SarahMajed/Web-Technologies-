@@ -1,0 +1,102 @@
+.page-format1 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+/* تنسيق جسم الصفحة */
+
+
+/* تنسيق عنصر h1 */
+.page-format h1 {
+    color: green;
+    font-size: 24px;
+    background-color: lightyellow;
+}
+
+.page-list h1 {
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul ul {
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+
+/* تنسيق الروابط التي تفتح في تبويب جديد */
+.new-tab {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: red; /* اللون الافتراضي */
+    background-color: #90EE90; /* أخضر فاتح */
+}
+
+.new-tab:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* إضافة محتوى بعد زيارة الرابط */
+.new-tab:visited::after {
+    content: " (Visited)";
+    color: darkred; 
+    background-color: #77B99A; 
+}
+
+/* تنسيق الروابط التي تفتح في نفس التبويب */
+.same-tab {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: yellow; /* اللون الافتراضي */
+    background-color: #696969; /* رمادي غامق */
+}
+
+.same-tab:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* إضافة محتوى بعد زيارة الرابط */
+.same-tab:visited::after {
+    content: " (Visited)";
+    color: gold; /* لون ذهبى غامق */
+    background-color: #4E4E4E; /* لون رمادي أغمق */
+}
+
+table {
+  
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+

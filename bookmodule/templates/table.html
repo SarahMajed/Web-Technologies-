@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+    <p style="text-align: center;"><b>Table 1: Table of Fruits and Their Prices </b></p>
+    <table border="1" align="center">
+        <tr>
+            <th>Fruit</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>$0.25</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>$0.50</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>$1.00</td>
+        </tr>
+        <tr>
+            <td>Pineapple</td>
+            <td>$2.00</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>$3.75</th>
+        </tr>
+    </table>
+
+    <p style="text-align: center;">Table 2: A more complex sample table</p>
+    <table border="1" align="center">
+        <tr>
+            <td rowspan="2">
+                <img src="{% static 'image/5.jpg' %}"  alt="Desert Image" width="180px">
+            </td>
+            <td colspan="4" style="text-align: center;">Camelid comparison<br>Approximate as of 6/2011</td>
+            <tr>
+                <th># of humps</th>
+                <th>Indigenous region</th>
+                <th>Spits?</th>
+                <th>Produces wool?</th>
+            </tr> 
+            
+        </tr>
+
+        <tr>
+            <th>Dromedary</th>
+            <td>1</td>
+            <td>Arabian Peninsula</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th> Camels (bactrian)</th>
+            <td>2</td>
+            <td>Africa/Asia</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th>Llamas</th>
+            <td>1</td>
+            <td>Andes Mountains</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+       
+     
+       
+    </table>
+
+</body>
+</html>
+
+
+
+
+
